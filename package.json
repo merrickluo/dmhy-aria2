@@ -1,0 +1,25 @@
+{
+  "name": "dmhy-aria2",
+  "version": "0.0.1",
+  "description": "add rss feed to auto download from dmhy",
+  "main": "app/index.js",
+  "scripts": {
+		"dev": "nodemon app/index.js --exec babel-node --presets es2015",
+		"build": "babel lib -d dist --presets es2015",
+		"serve": "node dist/index.js",
+    "test": "jest"
+  },
+  "author": "merrick@luois.me",
+  "license": "WTFPL",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "eslint": "^3.16.1",
+    "jest": "^19.0.2",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "feedparser": "^2.1.0",
+    "koa": "^2.0.1"
+  }
+}
