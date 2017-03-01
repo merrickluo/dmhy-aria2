@@ -4,9 +4,9 @@
   "description": "add rss feed to auto download from dmhy",
   "main": "app/index.js",
   "scripts": {
-		"dev": "nodemon app/index.js --exec babel-node --presets es2015",
-		"build": "babel lib -d dist --presets es2015",
-		"serve": "node dist/index.js",
+    "dev": "nodemon app/index.js --exec babel-node --presets es2015",
+    "build": "babel lib -d dist --presets es2015",
+    "serve": "node dist/index.js",
     "test": "jest"
   },
   "author": "merrick@luois.me",
@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "feedparser": "^2.1.0",
-    "koa": "^2.0.1"
+    "koa": "^2.0.1",
+    "request": "^2.79.0"
   }
 }
